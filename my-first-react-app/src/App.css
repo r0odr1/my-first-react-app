@@ -1,42 +1,101 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  font-size: 24px;
+  font-family: Space Mono;
+  font-weight: 500;
+  padding: 5px 8px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  font-weight: bold;
+}
+
+.imagen {
+  margin-right: 40px;
+}
+
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+.font-title {
+  color: #333333;
+  font-size: 80px;
+  font-weight: bold;     
+}
+
+.font-paragrahp {
+  text-align: left;
+  font-size: 25px;
+  width: 400px;
+}
+
+.button {
+  background-color: #4F4F4F;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 17px 17px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 415px) {
+
+  * {
+      font-size: 18px;
+      font-family: Space Mono;
+      font-weight: 0;
+      padding: 0 !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title {
+      padding: 8px !important;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  img {
+      order: 1;
+      width: 200px;
+      height: 200px;
+      
+  }
+    
+  .imagen {
+      margin-right: 0px;
+  }
+    
+  .font-title {
+      color: #333333;
+      font-size: 38px;
+      font-weight: bold;     
+      width: 320px;
+      order: 2;
+  }
+    
+  .font-paragrahp {
+      font-size: 15px;
+      width: 300px;
+      order: 3;
+  }
+    
+  .button {
+      font-size: 10px;
+      padding: 20px !important;
+      margin-left: 0px;
+      width: 58%;
+      order: 4;
+  }
 }
